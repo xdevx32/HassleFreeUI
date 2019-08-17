@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+    <span routerLink="/">Hassle Free</span>
+    <button mat-button [routerLink]="['/books']"><mat-icon>library_books</mat-icon> &nbsp; Wallet</button>
+    <button mat-button [routerLink]="['/authors']"><mat-icon>group</mat-icon> &nbsp; Pay Table</button>
+    <span style="flex: 1 1 auto"></span>
+    <!-- <ng-template [ngIf]="authService.isAuthenticated()">
+        <button mat-button
+                color="accent"
+                [routerLink]="['/user', userData.id]">
+            <mat-icon>account_box</mat-icon> &nbsp; Hello, {{getUsername()}}
+        </button>
+
+        <button mat-button
+                 (click)="authService.logout()">
+              <mat-icon>exit_to_app</mat-icon> &nbsp; Logout
+        </button>
+    </ng-template>
+    <ng-template [ngIf]="!authService.isAuthenticated()"> -->
+        <button mat-button [routerLink]="['/login']"><mat-icon>perm_identity</mat-icon> &nbsp; Login</button>
+        <button mat-button [routerLink]="['/register']"><mat-icon>call_made</mat-icon> &nbsp; Register</button>
+    <!-- </ng-template> -->
+</mat-toolbar>
